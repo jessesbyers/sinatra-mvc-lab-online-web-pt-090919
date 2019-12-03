@@ -20,6 +20,7 @@ class PigLatinizer
         end
         letter_array << ["ay"]
         result << letter_array.join
+        binding.pry
       end
     end
     result.to_s
