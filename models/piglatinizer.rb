@@ -5,9 +5,9 @@ class PigLatinizer
     @user_phrase = user_phrase
   end
 
-  def piglatinize(user_phrase)
+  def piglatinize(string)
     result = []
-    word_array = user_phrase.split
+    word_array = string.split
     word_array.map do |word|
       letter_array = word.chars
       if letter_array[0].downcase.start_with?('a','e','i','o','u')
