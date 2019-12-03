@@ -23,6 +23,6 @@ class PigLatinizer
       end
     end
     binding.pry
-    result.flatten[0]
+    result.flatten.join(" ")
   end
 end
