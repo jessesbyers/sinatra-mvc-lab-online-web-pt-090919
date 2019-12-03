@@ -10,6 +10,7 @@ class PigLatinizer
     word_array = string.split
     word_array.map do |word|
       letter_array = word.chars
+      binding.pry
       if letter_array[0].downcase.start_with?('a','e','i','o','u')
         letter_array << ["way"]
         result = letter_array.join
@@ -24,5 +25,7 @@ class PigLatinizer
     end
     result
   end
+
+  def
 
 end
