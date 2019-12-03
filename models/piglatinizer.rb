@@ -22,6 +22,7 @@ class PigLatinizer
         result << letter_array.join
       end
     end
+    binding.pry
     result.flatten[0]
   end
 end
